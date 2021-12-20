@@ -10,14 +10,32 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <title>Food recipe app</title>
+
+    <title>Recipe app</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
     
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAsF2QOKEkFPBm6MpRcc7lpD2xyLzf14JY",
+        authDomain: "what-to-cook-28b80.firebaseapp.com",
+        projectId: "what-to-cook-28b80",
+        storageBucket: "what-to-cook-28b80.appspot.com",
+        messagingSenderId: "459092369749",
+        appId: "1:459092369749:web:38d4ee1151b7d83d71cfdc"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
